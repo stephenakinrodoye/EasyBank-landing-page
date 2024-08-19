@@ -6,6 +6,8 @@
   overflow-x: hidden;
 }
 
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -21,14 +23,14 @@ body {
 }
 
 .close-mobile-menu {
+  display: none;
   position: fixed;
-  top: 1.4rem;
-  right: 5rem;
-  height: 1rem;
+  top: 1.3rem;
+  right: 1.25rem;
   background-color: transparent;
 }
 
-.header__menu span {
+.open-mobile-menu span {
   display: block;
   background-color: black;
   height: 2px;
@@ -36,10 +38,63 @@ body {
   margin: 3px 0;
 }
 
+.header-request-btn {
+  display: none;
+}
+
+.hero-section {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-section-background {
+  width: 100vw;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-section-mockup {
+  max-width: 100%;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 1rem;
+}
+
+.hero-section-msg {
+  margin: 2rem;
+  font-size: 22px;  
+}
+
+.hero-section-msg h2 {
+  font-size: 40px;
+  font-weight: 300;
+  color: hsl(233, 26%, 24%);
+}
+
+.hero-section-msg p {
+  margin-top: 1rem;
+  font-size: 19px;
+  line-height: 2rem;
+  color: hsl(233, 8%, 62%);
+}
+
+.hero-section-msg .request-btn {
+  margin: 2rem;
+}
+
+/* change padding to padding: 1rem 5rem on desktop*/
 .main-header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
   align-items: center;
   position: fixed;
   top: 0;
@@ -54,6 +109,10 @@ body {
   justify-content: space-between;
   width: 20rem;
   list-style-type: none;
+}
+
+.nav-container {
+  display: none;
 }
 
 .nav-links {
