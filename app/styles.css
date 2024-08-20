@@ -6,7 +6,15 @@
   overflow-x: hidden;
 }
 
-
+:root {
+  --darkBlue: hsl(233, 26%, 24%);
+  --limeGreen: hsl(136, 65%, 51%);
+  --brightCyan: hsl(192, 70%, 51%);
+  --grayishBlue: hsl(233, 8%, 62%);
+  --ightGrayishBlue: hsl(220, 16%, 96%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
 
 .attribution {
   font-size: 11px;
@@ -22,21 +30,40 @@ body {
   font-size: 1rem;
 }
 
-.close-mobile-menu {
-  display: none;
-  position: fixed;
-  top: 1.3rem;
-  right: 1.25rem;
-  background-color: transparent;
+/*hamburger*/
+
+.hamburger {
+  cursor: pointer;
 }
 
-.open-mobile-menu span {
+.hamburger span {
   display: block;
-  background-color: black;
+  background-color: var(--darkBlue);
   height: 2px;
   width: 20px;
-  margin: 3px 0;
+  margin: 5px 0;
+  transform-origin: left center;
 }
+
+.open .line:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform:  rotate(45deg);
+  -o-transform:  rotate(45deg);
+  transform:  rotate(45deg);
+}
+
+.open .line:nth-child(2){
+  opacity: 0;
+}
+
+.open .line:nth-child(3){
+  -webkit-transform:  rotate(-45deg);
+  -ms-transform:  rotate(-45deg);
+  -o-transform:  rotate(-45deg);
+  transform:  rotate(-45deg);
+}
+
+/* Hero section */
 
 .header-request-btn {
   display: none;
