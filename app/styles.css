@@ -11,7 +11,7 @@
   --limeGreen: hsl(136, 65%, 51%);
   --brightCyan: hsl(192, 70%, 51%);
   --grayishBlue: hsl(233, 8%, 62%);
-  --ightGrayishBlue: hsl(220, 16%, 96%);
+  --lightGrayishBlue: hsl(220, 16%, 96%);
   --veryLightGray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
 }
@@ -65,11 +65,12 @@ body {
 
 /* Hero section */
 
-.header-request-btn {
+.desktop-header-request-btn {
   display: none;
 }
 
 .hero-section {
+  background-color: var(--veryLightGray);
   position: relative; 
   display: flex;
   justify-content: center;
@@ -100,17 +101,20 @@ body {
   font-size: 22px;  
 }
 
-.hero-section-msg h2 {
+.hero-section-msg h2, .banking-features h2 {
   font-size: 40px;
   font-weight: 300;
   color: hsl(233, 26%, 24%);
 }
 
-.hero-section-msg p {
+.hero-section-msg p,
+.banking-features p {
   margin-top: 1rem;
   font-size: 19px;
   line-height: 2rem;
   color: hsl(233, 8%, 62%);
+  text-align: center;
+  margin: auto;
 }
 
 .hero-section-msg .request-btn {
@@ -167,17 +171,46 @@ body {
 }
 
 .request-btn {
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 5rem;
   background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
   color: white;
   cursor: pointer;
   border: none;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .request-btn:hover {
   background: linear-gradient(to right, hsl(136, 65%, 70%), hsl(192, 70%, 70%));
+}
+
+/* Features container */
+.banking-features {
+  padding: 2rem 0;
+  margin: .5rem;
+}
+
+.banking-features h3, h2{
+  display: flex;
+  justify-content: center;
+  color: var(--darkBlue);
+  margin: 2rem 0;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.banking-features img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.features-container {
+  background-color: var(--lightGrayishBlue);
+  padding: 4rem 2rem;
 }
 
 
