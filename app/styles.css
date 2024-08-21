@@ -19,10 +19,12 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: var(--darkBlue);
+  color: antiquewhite;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: antiquewhite;
 }
 
 body {
@@ -101,13 +103,12 @@ body {
   font-size: 22px;  
 }
 
-.hero-section-msg h2, .banking-features h2 {
-  font-size: 40px;
+h2 {
+  font-size: 38px;
   font-weight: 300;
   color: hsl(233, 26%, 24%);
 }
 
-.hero-section-msg p,
 .banking-features p {
   margin-top: 1rem;
   font-size: 19px;
@@ -190,7 +191,7 @@ body {
   margin: .5rem;
 }
 
-.banking-features h3, h2{
+h3, h2{
   display: flex;
   justify-content: center;
   color: var(--darkBlue);
@@ -202,7 +203,7 @@ h3 {
   font-weight: 300;
 }
 
-.banking-features img {
+img {
   display: flex;
   justify-content: center;
   margin: auto;
@@ -213,6 +214,79 @@ h3 {
   padding: 4rem 2rem;
 }
 
+/* Latest articles section */
+
+.article-container {
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 2rem 0;
+}
+
+.article-container img {
+  height: 20rem;
+  width: 100%;
+}
+
+.article-description {
+  padding: 2rem;
+  text-align: left;  
+  margin-top: 1rem;
+  font-size: 19px;
+  line-height: 2rem;
+  color: hsl(233, 8%, 62%);
+  margin: auto;  
+}
+
+.latest-articles-container {
+  background-color: var(--veryLightGray);
+  padding: 2rem;
+}
+
+/* footer */
+
+.copyright {
+  color: var(--lightGrayishBlue);
+  padding: 1rem;
+}
+
+footer {
+  background-color: var(--darkBlue);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--veryLightGray);
+}
+
+.footer-about-container {
+  margin: 2rem;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+.footer-logo {
+  filter: brightness(0) invert(1);
+}
+
+.footer-request-button {
+  margin: 2rem;
+}
+
+.socials-icons {
+  display: flex;
+  margin: 3rem 0 0 0;
+  justify-content: space-between;
+  width: 15rem;
+}
+
+.socials-icons img {
+  height: 2rem;
+  width: 2rem;
+}
 
 @media screen and (max-width: 992px) {
 
