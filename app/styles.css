@@ -99,14 +99,18 @@ body {
 }
 
 .hero-section-msg {
-  margin: 2rem;
-  font-size: 22px;  
+  font-size: 19px;
+  line-height: 2rem;
+  color: hsl(233, 8%, 62%);
+  text-align: center;
+  margin: auto;
 }
 
 h2 {
   font-size: 38px;
   font-weight: 300;
   color: hsl(233, 26%, 24%);
+  height: 3rem;
 }
 
 .banking-features p {
@@ -195,7 +199,7 @@ h3, h2{
   display: flex;
   justify-content: center;
   color: var(--darkBlue);
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 h3 {
@@ -224,7 +228,7 @@ img {
 }
 
 .article-container img {
-  height: 20rem;
+  height: 15rem;
   width: 100%;
 }
 
