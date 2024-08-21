@@ -1,17 +1,16 @@
-/*when open-mobile-menu is clicked
-open-mobile-menu = display none
-
-close-mobile-menu = display block
-*/
 
 const hamburgerbtn = document.querySelector('#hamburger-btn');
+const overlay = document.querySelector('#overlay');
+const menuContainer = document.querySelector('#menu-container');
 
 hamburgerbtn.addEventListener('click', function() {
-  if (hamburgerbtn.classList.contains('open')) {
-    hamburgerbtn.classList.remove('open');    
-  } else {
-    hamburgerbtn.classList.add('open');
-  }
+  hamburgerbtn.classList.toggle('open');
 
-  console.log(hamburgerbtn);
+  if (hamburgerbtn.classList.contains('open')) {
+    overlay.style.display = 'block';
+    menuContainer.style.display = 'flex';
+  } else {
+    overlay.style.display = 'none';
+    menuContainer.style.display = 'none';
+  }
 });

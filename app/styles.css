@@ -117,6 +117,37 @@ body {
   margin: 2rem;
 }
 
+/* Overlay */
+.menu-container {
+  z-index: 3;
+  background-color: var(--white);
+  width: 90%;
+  height: 20rem;
+  position: absolute;
+  top: 5.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.8rem;
+  display: none;
+}
+
+.mobile-nav-links {
+  text-decoration: none;
+  color: var(--darkBlue);
+  padding: 1rem;
+}
+
+.overlay {
+  display: none;
+  background-image: linear-gradient(var(--darkBlue), transparent);
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  position: absolute;
+}
+
 /* change padding to padding: 1rem 5rem on desktop*/
 .main-header {
   display: flex;
@@ -131,20 +162,8 @@ body {
   z-index: 1000;
 }
 
-.nav-box {
-  display: flex;
-  justify-content: space-between;
-  width: 20rem;
-  list-style-type: none;
-}
-
 .nav-container {
   display: none;
-}
-
-.nav-links {
-  text-decoration: none;
-  color: black;
 }
 
 .request-btn {
@@ -154,6 +173,7 @@ body {
   color: white;
   cursor: pointer;
   border: none;
+  font-size: 22px;
 }
 
 .request-btn:hover {
@@ -162,6 +182,18 @@ body {
 
 
 @media screen and (max-width: 992px) {
+
+  .nav-box {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    list-style-type: none;
+  }
+  
+  .nav-links {
+    text-decoration: none;
+    color: black;
+  }
   .header{
     padding: 0.5rem 1rem;
     height: 4rem;
